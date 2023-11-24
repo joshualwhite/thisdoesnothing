@@ -2,6 +2,8 @@
 // @ts-check
 import { join } from 'path';
 import { skeleton } from '@skeletonlabs/tw-plugin';
+import { creelBayDigitalTheme } from './theme';
+
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -16,9 +18,12 @@ export default {
 	plugins: [
 		skeleton({
 			themes: {
-				preset: [
-					{ name: "wintry", enhancements: true }
-				] 
+				// preset: [
+				// 	{ name: "wintry", enhancements: true }
+				// ],
+				custom: [
+					creelBayDigitalTheme
+				]
 			}
 		})
 	]

@@ -9,7 +9,7 @@
 
 <div>
 	<Header />
-	<main class="bg-surface-900 min-h-screen w-full p-3 md:p-10">
+	<main>
 	  {#if $navigating}
         <LoadingBar />
       {:else}
